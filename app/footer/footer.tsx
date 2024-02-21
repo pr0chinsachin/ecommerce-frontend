@@ -1,8 +1,6 @@
 "use client";
 import {
   Footer,
-  FooterBrand,
-  FooterCopyright,
   FooterDivider,
   FooterLink,
   FooterLinkGroup,
@@ -27,8 +25,7 @@ export default function FooterSection() {
           </FooterLinkGroup>
         </div>
         <FooterDivider />
-        <FooterCopyright href="#" by="ISM" />
-        {cDate.getFullYear()}
+        ISM {cDate.getFullYear()}
       </div>
     </Footer>
   );

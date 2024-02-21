@@ -4,11 +4,11 @@ import { useState } from "react";
 export default function Search() {
   const [selected, setSelected] = useState("");
 
-  const handleChange = (event: any) => {
+  function handleChange(event: any) {
     console.log("Label", event.target.selectedOptions[0].label);
     console.log(event.target.value);
     setSelected(event.target.value);
-  };
+  }
 
   return (
     <div>
