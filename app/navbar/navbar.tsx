@@ -42,20 +42,12 @@ import {
 export default function NavbarItem() {
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-100">
-        <body class="h-full">
-        ```
-      */}
-      <Navbar fluid rounded>
-        <NavbarBrand href="https://flowbite-react.com">
+      <Navbar fluid rounded className="bg-cyan-950 text-slate-50">
+        <NavbarBrand href="">
           <Image
             src={Logo}
             className="mr-3 h-6 sm:h-9"
-            alt="Flowbite React Logo"
+            alt=""
             width={50}
             height={75}
           />
@@ -90,13 +82,27 @@ export default function NavbarItem() {
           <NavbarToggle />
         </div>
         <NavbarCollapse>
-          <NavbarLink href="#" active>
+          <NavbarLink href="#" className="text-slate-50" active>
             Home
           </NavbarLink>
-          <NavbarLink href="#">About</NavbarLink>
-          <NavbarLink href="#">Services</NavbarLink>
-          <NavbarLink href="#">Pricing</NavbarLink>
-          <NavbarLink href="#">Contact</NavbarLink>
+          <NavbarLink className="text-slate-50" href="#">
+            <Dropdown arrowIcon={true} inline label="Services">
+              <DropdownItem>Sales</DropdownItem>
+              <DropdownItem>Rent</DropdownItem>
+              <DropdownItem>Earnings</DropdownItem>
+              <DropdownDivider />
+              <DropdownItem>Buildings</DropdownItem>
+            </Dropdown>
+          </NavbarLink>
+          <NavbarLink className="text-slate-50" href="#">
+            Gallary
+          </NavbarLink>
+          <NavbarLink className="text-slate-50" href="#">
+            About Us
+          </NavbarLink>
+          <NavbarLink className="text-slate-50" href="#">
+            Contact
+          </NavbarLink>
         </NavbarCollapse>
       </Navbar>
     </>
