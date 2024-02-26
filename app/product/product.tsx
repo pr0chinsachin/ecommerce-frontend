@@ -4,6 +4,7 @@ import carIcon from "../../public/car.svg";
 import Bathroom from "../../public/bathtub-bold-bathroom.svg";
 import Bedroom from "../../public/bed-bedroom-alt.svg";
 import ProductImage from "../../public/image-card-01.jpeg";
+import { HiEye, HiCalendar, HiPencilAlt } from "react-icons/hi";
 
 const products = [
   {
@@ -18,6 +19,7 @@ const products = [
     bed: "2",
     bath: "2",
     carParking: "2",
+    propertyArea: "200 sq.ft",
   },
   {
     id: 2,
@@ -31,10 +33,11 @@ const products = [
     bed: "2",
     bath: "1",
     carParking: "1",
+    propertyArea: "250 sq.ft",
   },
   {
     id: 3,
-    name: "Focus Paper Refill",
+    name: "Focus Paper",
     href: "#",
     price: "$89",
     imageSrc:
@@ -44,10 +47,11 @@ const products = [
     bed: "1",
     bath: "1",
     carParking: "1",
+    propertyArea: "500 sq.ft",
   },
   {
     id: 4,
-    name: "Machined Mechanical Pencil",
+    name: "Machined",
     href: "#",
     price: "$35",
     imageSrc:
@@ -57,6 +61,7 @@ const products = [
     bed: "1",
     bath: "2",
     carParking: "1",
+    propertyArea: "180 sq.ft",
   },
   {
     id: 5,
@@ -70,6 +75,7 @@ const products = [
     bed: "2",
     bath: "2",
     carParking: "2",
+    propertyArea: "360 sq.ft",
   },
   {
     id: 6,
@@ -83,10 +89,11 @@ const products = [
     bed: "2",
     bath: "2",
     carParking: "2",
+    propertyArea: "300 sq.ft",
   },
   {
     id: 7,
-    name: "Focus Paper Refill",
+    name: "Focus Refill",
     href: "#",
     price: "$89",
     imageSrc:
@@ -96,10 +103,11 @@ const products = [
     bed: "3",
     bath: "3",
     carParking: "2",
+    propertyArea: "120 sq.ft",
   },
   {
     id: 8,
-    name: "Machined Mechanical Pencil",
+    name: "Machined Pencil",
     href: "#",
     price: "$35",
     imageSrc:
@@ -109,13 +117,15 @@ const products = [
     bed: "3",
     bath: "3",
     carParking: "3",
+    propertyArea: "600 sq.ft",
   },
+
   // Mor  e products...
 ];
 
 export default function Products() {
   return (
-    <div className="bg-white">
+    <div className="bg-white mt-10 mb-10">
       <div className="mx-auto container">
         <h2 className="text-4xl text-center font-bold mt-10 mb-10">
           Most Featured Product
@@ -134,14 +144,21 @@ export default function Products() {
                   />
                 </div>
                 <h3 className="text-sm text-gray-700">{product.name}</h3>
+                <div>
+                  <span className="inline-flex items-baseline">
+                    <HiPencilAlt /> &nbsp;
+                    <span>{product.propertyArea}</span>
+                  </span>
+                </div>
                 <div className="text-lg font-medium text-gray-900">
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2">
                     <div>{product.price}</div>
-                    <div className="mt-1">
-                      <Button>View</Button>
+                    <div className="mt-1 pl-20">
+                      <HiEye />
                     </div>
                   </div>
                 </div>
+                <div className="text-lg font-medium text-gray-900"></div>
                 <div className="grid grid-cols-3 gap-4 mb-2">
                   <div>
                     <table>

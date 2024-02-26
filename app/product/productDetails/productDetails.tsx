@@ -1,10 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Style from "./productDetails.module.css";
-import { Badge } from "flowbite-react";
-import { Card } from "flowbite-react";
+import { Badge, Card } from "flowbite-react";
 import ProductDescription from "./productDescription/productDescription";
 import Teams from "@/app/team/team";
+import ContactAgentForm from "@/app/contactAgentForm/ContactAgentForm";
+import { HiEye, HiCalendar, HiPencilAlt } from "react-icons/hi";
 
 export default function ProductDetails() {
   const [mainImage, setMainImage] = useState(
@@ -46,6 +47,24 @@ export default function ProductDetails() {
           </div>
 
           <hr />
+          <div className="grid grid-cols-4">
+            <span className="inline-flex items-baseline">
+              <HiEye style={{ "padding-top": "2px" }} /> &nbsp;
+              <span>200</span>
+            </span>
+            <span className="inline-flex items-baseline">
+              <HiCalendar style={{ "padding-top": "2px" }} /> &nbsp;
+              <span>july 10 2024</span>
+            </span>
+            <span className="inline-flex items-baseline">
+              Posted By &nbsp;
+              <span>Sachin Maharjan</span>
+            </span>
+            <span className="inline-flex items-baseline">
+              <HiPencilAlt /> &nbsp;
+              <span>200 sq meter</span>
+            </span>
+          </div>
         </Card>
       </div>
       <div className="container mx-auto mt-10 mb-10">
@@ -94,7 +113,14 @@ export default function ProductDetails() {
             </div>
           </div>
           <ProductDescription />
-          <Teams />
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <Teams />
+            </div>
+            <div>
+              <ContactAgentForm />
+            </div>
+          </div>
         </Card>
       </div>
     </>

@@ -14,7 +14,7 @@ export default function FooterSection() {
 
   return (
     <Footer container>
-      <div className="w-full text-center">
+      <div className="w-full text-center mt-10">
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
           <Image src={Logo} alt="Company Logo" width={75} height={75} />
           <FooterLinkGroup>
