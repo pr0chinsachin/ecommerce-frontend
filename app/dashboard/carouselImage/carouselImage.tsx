@@ -12,12 +12,6 @@ export default function CarouselImage() {
           height={100}
         />
         <Image
-          src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-          alt="..."
-          width={100}
-          height={100}
-        />
-        <Image
           src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
           alt="..."
           width={100}

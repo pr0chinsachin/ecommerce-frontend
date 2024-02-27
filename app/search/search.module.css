@@ -1,0 +1,23 @@
+
+/* 
+ @media (min-width: 481px) and (max-width: 767px) {
+   #desktopView {
+     display:none;
+   }
+ } */
+ @media (min-width: 481px) and (max-width: 767px) {
+  #desktopView {
+    display:none;
+  }
+  #mobileView {
+    display:block;
+  }
+}
+@media (min-width: 768px) {
+  #mobileView {
+    display:none;
+  }
+  #desktopView {
+    display:block;
+  }
+}
