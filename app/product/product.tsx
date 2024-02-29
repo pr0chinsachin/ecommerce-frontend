@@ -1,9 +1,10 @@
-import { Card, Button } from "flowbite-react";
+import { Card } from "flowbite-react";
 import Image from "next/image";
 import carIcon from "../../public/car.svg";
 import Bathroom from "../../public/bathtub-bold-bathroom.svg";
 import Bedroom from "../../public/bed-bedroom-alt.svg";
 import { HiEye, HiPencilAlt } from "react-icons/hi";
+import { Badge } from "flowbite-react";
 
 const products = [
   {
@@ -19,6 +20,7 @@ const products = [
     bath: "2",
     carParking: "2",
     propertyArea: "200 sq.ft",
+    status: "sale",
   },
   {
     id: 2,
@@ -33,6 +35,7 @@ const products = [
     bath: "1",
     carParking: "1",
     propertyArea: "250 sq.ft",
+    status: "rent",
   },
   {
     id: 3,
@@ -47,6 +50,7 @@ const products = [
     bath: "1",
     carParking: "1",
     propertyArea: "500 sq.ft",
+    status: "sale",
   },
   {
     id: 4,
@@ -61,6 +65,7 @@ const products = [
     bath: "2",
     carParking: "1",
     propertyArea: "180 sq.ft",
+    status: "sale",
   },
   {
     id: 5,
@@ -75,6 +80,7 @@ const products = [
     bath: "2",
     carParking: "2",
     propertyArea: "360 sq.ft",
+    status: "sale",
   },
   {
     id: 6,
@@ -89,6 +95,7 @@ const products = [
     bath: "2",
     carParking: "2",
     propertyArea: "300 sq.ft",
+    status: "sale",
   },
   {
     id: 7,
@@ -103,6 +110,7 @@ const products = [
     bath: "3",
     carParking: "2",
     propertyArea: "120 sq.ft",
+    status: "rent",
   },
   {
     id: 8,
@@ -117,6 +125,7 @@ const products = [
     bath: "3",
     carParking: "3",
     propertyArea: "600 sq.ft",
+    status: "sale",
   },
 
   // Mor  e products...
@@ -143,21 +152,30 @@ export default function Products() {
                   />
                 </div>
                 <h3 className="text-sm text-gray-700">{product.name}</h3>
-                <div>
-                  <span className="inline-flex items-baseline">
-                    <HiPencilAlt /> &nbsp;
-                    <span>{product.propertyArea}</span>
-                  </span>
+                <div className="grid grid-cols-2">
+                  <div>
+                    <span className="inline-flex items-baseline">
+                      <HiPencilAlt /> &nbsp;
+                      <span>{product.propertyArea}</span>
+                    </span>
+                  </div>
+                  <div>
+                    <span className="inline-flex float-left items-baseline">
+                      <Badge color="warning">{product.status}</Badge>
+                    </span>
+                  </div>
                 </div>
+
                 <div className="text-lg font-medium text-gray-900">
                   <div className="grid grid-cols-2">
                     <div>{product.price}</div>
-                    <div className="mt-1 pl-20">
-                      <HiEye />
+                    <div className="mt-1">
+                      <span className="float-right">
+                        <HiEye />
+                      </span>
                     </div>
                   </div>
                 </div>
-                <div className="text-lg font-medium text-gray-900"></div>
                 <div className="grid grid-cols-3 gap-4 mb-2">
                   <div>
                     <table>

@@ -100,7 +100,11 @@ export default function Search() {
       </div>
 
       <div id={Styles.mobileView}>
-        <HiSearchCircle size={40} onClick={toggleFormVisibility}>
+        <HiSearchCircle
+          color="bg-cyan-950"
+          size={40}
+          onClick={toggleFormVisibility}
+        >
           {isFormVisible ? "Hide Form" : "Show Form"}
         </HiSearchCircle>
         {isFormVisible && (
