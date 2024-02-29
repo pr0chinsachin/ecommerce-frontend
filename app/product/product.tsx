@@ -160,7 +160,7 @@ export default function Products() {
                     </span>
                   </div>
                   <div>
-                    <span className="inline-flex float-left items-baseline">
+                    <span className="inline-flex float-right items-baseline">
                       <Badge color="warning">{product.status}</Badge>
                     </span>
                   </div>
