@@ -82,7 +82,7 @@ export default function NavbarItem() {
           <NavbarToggle />
         </div>
         <NavbarCollapse>
-          <NavbarLink href="#" className="text-slate-50" active>
+          <NavbarLink href="/" className="text-slate-50" active>
             Home
           </NavbarLink>
           <NavbarLink className="text-slate-50" href="#">
@@ -94,13 +94,13 @@ export default function NavbarItem() {
               <DropdownItem>Buildings</DropdownItem>
             </Dropdown>
           </NavbarLink>
-          <NavbarLink className="text-slate-50" href="#">
-            Gallary
+          <NavbarLink className="text-slate-50" href="/agent">
+            Agent
           </NavbarLink>
           <NavbarLink className="text-slate-50" href="#">
             About Us
           </NavbarLink>
-          <NavbarLink className="text-slate-50" href="#">
+          <NavbarLink className="text-slate-50" href="/contact">
             Contact
           </NavbarLink>
         </NavbarCollapse>

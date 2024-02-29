@@ -114,7 +114,7 @@ export default function ProductDetails() {
           </div>
           <ProductDescription />
           <div className="grid grid-cols-2 gap-4">
-            <div>
+            <div className="float-right">
               <Teams />
             </div>
             <div>

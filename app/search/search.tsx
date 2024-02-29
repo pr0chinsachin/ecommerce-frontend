@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "flowbite-react";
 import { useState } from "react";
+import { HiSearchCircle } from "react-icons/hi";
 import Styles from "./search.module.css";
 
 export default function Search() {
@@ -99,9 +100,9 @@ export default function Search() {
       </div>
 
       <div id={Styles.mobileView}>
-        <Button onClick={toggleFormVisibility}>
+        <HiSearchCircle size={40} onClick={toggleFormVisibility}>
           {isFormVisible ? "Hide Form" : "Show Form"}
-        </Button>
+        </HiSearchCircle>
         {isFormVisible && (
           <form className="container mx-auto px-4 py-6">
             <div className="">

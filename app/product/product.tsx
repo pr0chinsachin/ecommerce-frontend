@@ -3,8 +3,7 @@ import Image from "next/image";
 import carIcon from "../../public/car.svg";
 import Bathroom from "../../public/bathtub-bold-bathroom.svg";
 import Bedroom from "../../public/bed-bedroom-alt.svg";
-import ProductImage from "../../public/image-card-01.jpeg";
-import { HiEye, HiCalendar, HiPencilAlt } from "react-icons/hi";
+import { HiEye, HiPencilAlt } from "react-icons/hi";
 
 const products = [
   {
