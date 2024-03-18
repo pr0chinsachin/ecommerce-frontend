@@ -49,11 +49,11 @@ export default function ProductDetails() {
           <hr />
           <div className="grid grid-cols-4">
             <span className="inline-flex items-baseline">
-              <HiEye style={{ "padding-top": "2px" }} /> &nbsp;
+              <HiEye style={{ paddingTop: "2px" }} /> &nbsp;
               <span>200</span>
             </span>
             <span className="inline-flex items-baseline">
-              <HiCalendar style={{ "padding-top": "2px" }} /> &nbsp;
+              <HiCalendar style={{ paddingTop: "2px" }} /> &nbsp;
               <span>july 10 2024</span>
             </span>
             <span className="inline-flex items-baseline">
